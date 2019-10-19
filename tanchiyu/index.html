@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{padding-top:10px;}
+    .all_bg{
+      width:800px;height:600px;margin:0 auto;
+      border:1px solid red;
+    }
+    #allcanvas{position: relative;width: 800px;
+    height:600px;margin:0}
+    #canvas1{position: absolute;width:800px;height:600px;bottom:0;left:0;z-index: 0;}
+    #canvas2{position: absolute;width:800px;height:600px;bottom:0;left:0;z-index: -1;}
+  </style>
+</head>
+<body>
+  <div class="all_bg">
+    <div id="allcanvas">
+      <!--前画布:大鱼小鱼-->
+      <canvas id="canvas1" width="800" height="600"></canvas>
+      <!--后画布:海葵背景;;食物-->
+      <canvas id="canvas2" width="800" height="600"></canvas>
+    </div>
+  </div>
+  <script src="js/mom.js"></script>
+  <script src="js/fruit.js"></script>
+  <script src="js/ane.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/commonFunctions.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/collsion.js"></script>
+</body>
+</html>
